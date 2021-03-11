@@ -1,0 +1,6 @@
+module HepMC {
+  export *
+  requires cplusplus
+  umbrella "HepMC"
+  module * { export *}
+}
