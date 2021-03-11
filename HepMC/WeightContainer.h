@@ -31,7 +31,7 @@ namespace HepMC {
 
     public:
         /// defining the size type used by vector and map
-	typedef std::size_t size_type;
+	typedef unsigned long long size_type;
         /// iterator for the weight container
 	typedef std::vector<double>::iterator iterator;
         /// const iterator for the weight container
