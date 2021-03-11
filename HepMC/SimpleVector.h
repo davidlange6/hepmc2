@@ -54,12 +54,14 @@ public:
   FourVector() 
   : m_x(0), m_y(0), m_z(0), m_t(0) {}
 
+#ifndef __REFLEX__
   /// templated constructor
   /// this is used ONLY if T is not arithmetic
   template <class T >
   FourVector( const T& v,
          typename detail::disable_if< detail::is_arithmetic<T>::value, void >::type * = 0 )
   : m_x(v.x()), m_y(v.y()), m_z(v.z()), m_t(v.t()) {}
+#endif
 
   /// copy constructor
   FourVector(const FourVector & v)
