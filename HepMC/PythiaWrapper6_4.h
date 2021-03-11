@@ -247,7 +247,7 @@ extern "C" {
 #define upevnt upevnt_
     extern "C" {
 	void pyhepc(int*);
-	void pyinit(const char*,const char*,const char*,double*,int,int,int);
+        void pyinit(const char*,const char*,const char*,double*,std::size_t,std::size_t,std::size_t);
 	void pylist(int*);
 	void pystat(int*);
 	void pyevnt();
