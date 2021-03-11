@@ -8,6 +8,10 @@
 // Additional PDF information
 //////////////////////////////////////////////////////////////////////////
 
+#include <ostream>
+#include <istream>
+#include <algorithm>
+
 namespace HepMC {
 
 //! The PdfInfo class stores PDF information

@@ -8,11 +8,10 @@
 // Used by IO classes
 //////////////////////////////////////////////////////////////////////////
 
+#include "HepMC/GenParticle.h"
 #include <map>
 
 namespace HepMC {
-
-    class GenParticle;
 
     //! TempParticleMap is a temporary GenParticle* container used during input.
 
